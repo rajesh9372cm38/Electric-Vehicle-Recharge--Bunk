@@ -1,4 +1,4 @@
-# Electric-Vehicle-Recharge--Bunk
+# Electric-Vehicle-Recharge-Bunk
 A web application to manage EV recharge bunk locations, slots, and users.
 
  Technologies Used:
