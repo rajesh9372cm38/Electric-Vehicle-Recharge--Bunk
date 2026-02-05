@@ -19,14 +19,20 @@ A web application to manage EV recharge bunk locations, slots, and users.
 - Search Nearby EV Bunk
 - View Slot Availability
 
-## Project Workflow
+Project Workflow:
 1. User registers and logs in
 2. User searches nearby EV bunk
 3. Admin manages locations and slots
 
-## How to Run the Project
-1. Clone the repository
-2. Open `index.html`
-3. Configure Firebase keys
-4. Run the project
+How to Run Project :
+1. Download project folder
+2. Open Firebase console and create project
+3. Enable Authentication (Email/Password)
+4. Enable Firestore Database
+5. Add Firebase config in `firebase.js`
+6. Run using Live Server in VS Code
 
+ Future Enhancements :
+- Slot Booking System
+- Google Maps Integration
+- Payment Gateway
