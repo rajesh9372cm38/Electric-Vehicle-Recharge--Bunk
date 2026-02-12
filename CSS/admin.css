@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff3f3;
+  text-align: center;
+}
+
+h2 {
+  background: darkred;
+  color: white;
+  padding: 15px;
+}
+
+.form-box {
+  background: white;
+  width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.form-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.form-box button {
+  width: 95%;
+  padding: 10px;
+  background: darkred;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  background: darkred;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.logout-btn {
+  background: black;
+  border: none;
+  cursor: pointer;
+}

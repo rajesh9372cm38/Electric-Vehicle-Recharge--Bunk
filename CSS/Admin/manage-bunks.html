@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Manage Bunks</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <h2>Manage EV Recharge Bunks</h2>
+
+    <div id="bunkList"></div>
+
+    <script type="module">
+      import { db } from "../js/firebase.js";
+      import {
+        collection,
+        getDocs,
+        deleteDoc,
+        doc,
+      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+      const bunkList = document.getElementById("bunkList");
+
+      async function loadBunks() {
+        bunkList.innerHTML = "";
+        const querySnapshot = await getDocs(collection(db, "bunks"));
+
+        querySnapshot.forEach((bunkDoc) => {
+          const bunk = bunkDoc.data();
+
+          bunkList.innerHTML += `
+          <div class="form-box">
+            <h3>${bunk.bunkName}</h3>
+            <p>${bunk.address}, ${bunk.city}</p>
+            <p>Slots: ${bunk.availableSlots}/${bunk.totalSlots}</p>
+            <button onclick="deleteBunk('${bunkDoc.id}')">Delete</button>
+          </div>
+        `;
+        });
+      }
+
+      window.deleteBunk = async function (id) {
+        await deleteDoc(doc(db, "bunks", id));
+        alert("Bunk Deleted Successfully!");
+        loadBunks();
+      };
+
+      loadBunks();
+    </script>
+  </body>
+</html>

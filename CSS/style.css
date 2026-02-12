@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #0a7cff;
+  color: white;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admin-btn {
+  background: darkred;
+}
+
+.logout-btn {
+  background: black;
+  border: none;
+  cursor: pointer;
+}
+
+.form-box {
+  background: white;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.form-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.form-box button {
+  width: 95%;
+  padding: 10px;
+  background: #0a7cff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#results {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.result-card {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px gray;
+  text-align: left;
+}
+
+.result-card a {
+  color: blue;
+  text-decoration: none;
+}
